@@ -1,0 +1,13 @@
+{% extends "bookapp/base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    {% for x in obj %}
+    <a href="{{ x.id }}"><h1> {{x.readpdf}} (pdf)</h1></a>
+</div>    
+
+{% endfor %}
+
+{% endblock %}
